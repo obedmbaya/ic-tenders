@@ -1,0 +1,107 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header {
+    background-color: white;
+    color: rgb(130, 129, 129);
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 140px;
+    width: 180px;
+    padding-right: 15px;
+}
+
+.logo h1 {
+    margin:20px;
+    font-size: 24px;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.auth-buttons button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 5px;
+    
+}
+
+.auth-buttons .login-button {
+    border-color: transparent;
+    background-color: white;
+
+}
+
+.auth-buttons .login-button:hover {
+    background-color: lightgrey;
+    color: white;
+
+}
+
+.auth-buttons .register-button {
+    text-decoration: none;
+    background-color: black;
+    border-color: transparent;
+}
+
+.login-button a {
+    color: black;
+    text-decoration: none;
+}
+
+.register-button a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-input {
+    border-radius: 75px;
+    padding: 10px;
+    margin-right: 5px;
+}
