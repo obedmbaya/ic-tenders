@@ -1,7 +1,8 @@
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid #ccc;
 }
 
 .site-header {
@@ -13,7 +14,8 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    height: 100px;
 }
 
 .container {
@@ -31,8 +33,9 @@ body {
 }
 
 .logo img {
-    height: 130px;
+    height: 110px;
     margin-right: 15px;
+    width: 140px;
 }
 
 .logo h1 {
@@ -49,30 +52,51 @@ body {
 .search-container {
     display: flex;
     align-items: center;
-    margin-right: auto;
-    margin-left: 20px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 5px 10px;
 }
 
-.search-container input{
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px 0 0 20px;
+form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#search-bar {
+    border: none;
     outline: none;
+    padding: 10px;
+    font-size: 16px;
+    flex-grow: 1;
+    background-color: #f0f0f0;
 }
 
-.search-container button {
-    margin: 10px;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-left: none;
-    background-color: #2D5C88;
-    color: white;
-    border-radius: 0 20px 20px 0;
+#search-button {
+    border: none;
+    background: none;
     cursor: pointer;
+    margin-right: 10px;
 }
 
-.search-container button:hover {
-    background-color: #1E3E5C;
+#search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+#advance-button {
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.arrow {
+    margin-left: 5px;
 }
 
 .auth-buttons {
@@ -110,4 +134,55 @@ body {
 
 .auth-buttons button:hover {
     background-color: #1E3E5C; /* Darker blue for hover effect */
+}
+
+/* Dropdown Menu */
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-button {
+    background-color: #4D4D4D; /* Neutral grey to avoid too much blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-button i {
+    margin-right: 5px;
+}
+
+.menu-button:hover {
+    background-color: #333333; /* Darker grey for hover effect */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* White for clean look */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #2D5C88; /* Primary blue for links */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-container:hover .dropdown-content {
+    display: block;
 }
