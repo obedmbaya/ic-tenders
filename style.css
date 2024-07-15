@@ -12,7 +12,7 @@ body {
     margin: 0 auto;
     position:fixed;
     top: 0;
-    width: 100%;
+    width: 1600px;
     z-index: 1000;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     height: 100px;
@@ -189,7 +189,7 @@ body {
 
 .form-container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 150px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -324,12 +324,20 @@ body {
 
     }
 
-    .auth-buttons .subsribe-button{
-        display: none;
-    }
+    
 
     .menu-container {
         display: none; /* Ensure menu button displays properly */
         margin-top: 10px; /* Adjust margin */
+    }
+
+    .pricing-options {
+        flex-direction: column; /* Stack pricing cards vertically */
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 90%; /* Make pricing cards take most of the screen width */
+        margin: 10px 0; /* Adjust margin between cards */
     }
 }
