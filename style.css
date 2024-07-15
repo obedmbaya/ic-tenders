@@ -263,3 +263,66 @@ body {
 .pricing-card ul li {
     margin-bottom: 10px;
 }
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .site-header {
+        height: 60px; /* Adjust header height for smaller screens */
+    }
+
+    .logo img {
+        height: 60px; /* Adjust logo size for smaller screens */
+    }
+
+    .container {
+        padding: 0 10px; /* Adjust container padding */
+    }
+
+    .search-container {
+        margin-left: 5px; /* Adjust margin for smaller screens */
+    }
+
+    .auth-buttons button {
+        padding: 8px 15px; /* Adjust button padding */
+    }
+
+    .menu-button {
+        padding: 8px 15px; /* Adjust menu button padding */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .site-header {
+        height: 50px; /* Further adjust header height for very small screens */
+    }
+
+    .logo img {
+        height: 50px; /* Further adjust logo size for very small screens */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch;
+    }
+
+    .search-container {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .auth-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: stretch;
+    }
+
+    .auth-buttons button {
+        margin: 5px 0; /* Adjust margin between buttons */
+        padding: 10px; /* Adjust button padding */
+    }
+
+    .menu-container {
+        display: block; /* Ensure menu button displays properly */
+        margin-top: 10px; /* Adjust margin */
+    }
+}
