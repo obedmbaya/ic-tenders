@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IC Tenders - Timely and Precise Tender Opportunities</title>
-        <link rel="stylesheet" href="style.css">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-        <link rel="manifest" href="./images/site.webmanifest">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - IC Tenders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
+<body>
+    <header class="site-header">
         <header class="site-header">
             <div class="container">
                 <div class="logo">
@@ -48,12 +42,18 @@
                     </div>
                 </div>
             </div>
-        </header>
+    </header>
+    <br><br> <br> <br><br> <br>
+    <main class="form-container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </main>
+</body>
 
-        <main>
-
-        </main>
-
-        
-    </body>
 </html>

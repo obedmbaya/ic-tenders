@@ -57,7 +57,7 @@ body {
     padding: 5px 10px;
 }
 
-form {
+.search-container form {
     display: flex;
     align-items: center;
     width: 100%;
@@ -185,4 +185,81 @@ form {
 
 .menu-container:hover .dropdown-content {
     display: block;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+}
+
+.form-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    padding: 10px;
+    background-color: #2D5C88;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pricing-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card h3 {
+    margin-top: 0;
+    color: #2D5C88;
+}
+
+.pricing-card p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
 }
