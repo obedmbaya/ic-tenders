@@ -7,8 +7,13 @@ body {
 .site-header {
     background-color: white;
     color: rgb(130, 129, 129);
-    padding: 0px;
+    padding: 10px 0;
     margin: 0 auto;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -26,9 +31,8 @@ body {
 }
 
 .logo img {
-    height: 140px;
-    width: 180px;
-    padding-right: 15px;
+    height: 130px;
+    margin-right: 15px;
 }
 
 .logo h1 {
@@ -42,66 +46,68 @@ body {
     font-style: italic;
 }
 
-.main-nav ul {
-    list-style: none;
-    margin: 0;
-    padding:0;
+.search-container {
     display: flex;
-}
-
-.main-nav li {
+    align-items: center;
+    margin-right: auto;
     margin-left: 20px;
 }
 
-.main-nav a {
-    color:black;
-    text-decoration: none;
-    font-size: 16px;
+.search-container input{
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search-container button {
+    margin: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #2D5C88;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #1E3E5C;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
 }
 
 .auth-buttons button {
-    display: inline-block;
+    margin-left: 10px;
+    background-color: #2D5C88;
+    color: white;
+    border: none;
     padding: 10px 20px;
-    border-radius: 25px;
-    margin: 5px;
-    
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.auth-buttons .login-button {
-    border-color: transparent;
-    background-color: white;
-
-}
-
-.auth-buttons .login-button:hover {
-    background-color: lightgrey;
-    color: white;
-
-}
-
-.auth-buttons .register-button {
-    text-decoration: none;
-    background-color: black;
-    border-color: transparent;
-}
-
-.login-button a {
-    color: black;
-    text-decoration: none;
-}
-
-.register-button a {
+.auth-buttons button a {
     color: white;
     text-decoration: none;
-
 }
 
-.search-bar {
-    display: flex;
+.auth-buttons button.login-button {
+    background-color: #2D5C88; /* Primary blue */
 }
 
-.search-input {
-    border-radius: 75px;
-    padding: 10px;
-    margin-right: 5px;
+.auth-buttons button.register-button {
+    background-color: #557A9E; /* A lighter shade of blue */
+}
+
+.auth-buttons button.subscribe-button {
+    background-color: #99BADD; /* Even lighter blue */
+}
+
+.auth-buttons button:hover {
+    background-color: #1E3E5C; /* Darker blue for hover effect */
 }
