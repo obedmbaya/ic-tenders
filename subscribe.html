@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe - IC Tenders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"> <img src="./images/Header Logo.PNG" alt="IC Tenders Logo"> </a>
+            </div>
+
+            <div class="search-container">
+                <form action="/search" method="GET">
+                    <button type="submit" id="search-button">
+                        <img src="./images/search.png" alt="Search">
+                    </button>
+                    <input type="text" name="query" placeholder="Search Tenders" id="search-bar">
+                    <button type="button" id="advance-button">Advance <span class="arrow">&#9662;</span></button>
+                </form>
+            </div>
+
+            <div class="auth-buttons">
+                <button class="login-button"><a href="login.html" >Login </a></button>
+                <button class="register-button"><a href="register.html">Register </a></button>
+                <button class="subsribe-button"><a href="">Subsribe</a></button>
+            </div>
+
+            <div class="menu-container">
+                <button class="menu-button"><i class="fas fa-bars"></i> Menu</button>
+                <div class="dropdown-content">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br><br> <br> <br><br> <br>
+    <main class="form-container">
+        <h2>Subscribe</h2>
+        <form action="/subscribe" method="POST">
+            <div class="pricing-options">
+                <label>
+                    <input type="radio" name="plan" value="basic" required>
+                    <div class="pricing-card">
+                        <h3>Basic Plan</h3>
+                        <p>R200/month</p>
+                        <ul>
+                            <li>Access to basic tenders</li>
+                            <li>Email notifications</li>
+                        </ul>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="plan" value="standard" required>
+                    <div class="pricing-card">
+                        <h3>Standard Plan</h3>
+                        <p>R350/month</p>
+                        <ul>
+                            <li>Access to standard tenders</li>
+                            <li>Email & SMS notifications</li>
+                        </ul>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="plan" value="premium" required>
+                    <div class="pricing-card">
+                        <h3>Premium Plan</h3>
+                        <p>R600/month</p>
+                        <ul>
+                            <li>Access to all tenders</li>
+                            <li>Email, SMS & Phone notifications</li>
+                            <li>Dedicated support</li>
+                        </ul>
+                    </div>
+                </label>
+            </div>
+            <button type="submit">Subscribe</button>
+        </form>
+    </main>
+</body>
+
+</html>
