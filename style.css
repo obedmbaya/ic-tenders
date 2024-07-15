@@ -337,7 +337,7 @@ body {
     }
 
     .pricing-card {
-        width: 90%; /* Make pricing cards take most of the screen width */
+        width: 80%; /* Make pricing cards take most of the screen width */
         margin: 10px 0; /* Adjust margin between cards */
     }
 }
