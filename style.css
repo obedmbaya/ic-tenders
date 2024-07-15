@@ -295,34 +295,41 @@ body {
 @media only screen and (max-width: 480px) {
     .site-header {
         height: 50px; /* Further adjust header height for very small screens */
+        width: 100%;
     }
 
     .logo img {
-        height: 50px; /* Further adjust logo size for very small screens */
+        height: 70px; /* Further adjust logo size for very small screens */
     }
 
     .container {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: row; /* Stack items vertically */
         align-items: stretch;
     }
 
     .search-container {
-        margin: 10px 0; /* Adjust margin for smaller screens */
-        padding: 10px; /* Adjust padding */
+        display: none;
     }
 
     .auth-buttons {
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: row; /* Stack buttons vertically */
         align-items: stretch;
+        display: flex;
+        align-items: center;
     }
 
     .auth-buttons button {
-        margin: 5px 0; /* Adjust margin between buttons */
-        padding: 10px; /* Adjust button padding */
+        margin-left: 5px 10px; /* Adjust margin between buttons */
+        padding: 2px 2px;
+
+    }
+
+    .auth-buttons .subsribe-button{
+        display: none;
     }
 
     .menu-container {
-        display: block; /* Ensure menu button displays properly */
+        display: none; /* Ensure menu button displays properly */
         margin-top: 10px; /* Adjust margin */
     }
 }
