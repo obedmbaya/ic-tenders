@@ -330,7 +330,8 @@ body {
 /* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
     .site-header {
-        height: 60px; /* Adjust header height for smaller screens */
+        height: 90px; /* Further adjust header height for very small screens */
+        width: 100%;
     }
 
     .logo img {
@@ -342,15 +343,15 @@ body {
     }
 
     .search-container {
-        margin-left: 5px; /* Adjust margin for smaller screens */
+        margin-left: 0px; /* Adjust margin for smaller screens */
     }
 
     .auth-buttons button {
-        padding: 8px 15px; /* Adjust button padding */
+        padding: 4px 7px; /* Adjust button padding */
     }
 
     .menu-button {
-        padding: 8px 15px; /* Adjust menu button padding */
+        padding: 4px 7px; /* Adjust menu button padding */
     }
 }
 
