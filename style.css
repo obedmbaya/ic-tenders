@@ -638,12 +638,37 @@ body {
     }
 
     .site-footer .container {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
     .footer-section {
         margin-bottom: 0;
         text-align: center;
+        width: 30%;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 10px;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+        margin-top: 10px;
+    }
+
+    .social-media li {
+        margin: 5px 0;
+    }
+
+    .social-media li a img {
+        width: 20px;
+        height: 20px;
     }
 }
