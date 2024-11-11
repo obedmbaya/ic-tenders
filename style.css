@@ -567,7 +567,7 @@ body {
 }
 
 /* iPad Landscape and larger screens */
-@media only screen and (min-width: 769px) and (max-width: 1180px) {
+@media only screen and (min-width: 769px) and (max-width: 1366px) {
     .site-header {
         height: 150px;
         width: 100%;
