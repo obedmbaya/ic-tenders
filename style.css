@@ -503,3 +503,124 @@ body {
         text-align: center;
     }
 }
+
+/* iPad Portrait and smaller screens */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .site-header {
+        height: 120px; /* Adjust header height */
+        width: 100%;
+    }
+
+    .logo img {
+        height: 80px; /* Adjust logo size */
+    }
+
+    .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .search-container {
+        display: flex; /* Display search bar if needed */
+    }
+
+    .auth-buttons {
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+    }
+
+    .auth-buttons button {
+        margin: 5px; /* Adjust margin between buttons */
+        padding: 5px 10px; /* Adjust button padding */
+    }
+
+    .menu-container {
+        display: flex; /* Display menu button */
+        margin-top: 0; /* Adjust margin */
+    }
+
+    .pricing-options {
+        flex-direction: row; /* Align pricing cards horizontally */
+        justify-content: center;
+    }
+
+    .pricing-card {
+        width: 45%; /* Adjust width of pricing cards */
+        margin: 10px; /* Adjust margin between cards */
+    }
+
+    .form-container button {
+        margin-top: 20px; /* Adjust button margin */
+    }
+
+    .site-footer .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-section {
+        margin-bottom: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* iPad Landscape and larger screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .site-header {
+        height: 150px;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
+    .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .search-container {
+        display: flex;
+    }
+
+    .auth-buttons {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .auth-buttons button {
+        margin: 5px;
+        padding: 10px 15px;
+    }
+
+    .menu-container {
+        display: flex;
+    }
+
+    .pricing-options {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .pricing-card {
+        width: 30%;
+        margin: 15px;
+    }
+
+    .form-container button {
+        margin-top: 15px;
+    }
+
+    .site-footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
