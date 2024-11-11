@@ -603,14 +603,15 @@ body {
 
     .pricing-options {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         gap: 15px;
     }
 
     .pricing-card {
         flex: 1 1 30%;
-        max-width: 250px; 
+        max-width: 30%; 
         margin: 15px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         padding: 20px;
@@ -620,8 +621,9 @@ body {
     }
 
     .pricing-options label {
-        display: inline-flex;
+        display: flex;
         align-items: center;
+        justify-content: center;
         width: 100%;
     }
 
