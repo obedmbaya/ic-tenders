@@ -656,15 +656,15 @@ body {
 
     .social-media {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        justify-content: center;
+        gap: 10px; 
         padding: 0;
         list-style: none;
         margin-top: 10px;
     }
 
     .social-media li {
-        margin: 5px 0;
+        display: inline-block;
     }
 
     .social-media li a img {
